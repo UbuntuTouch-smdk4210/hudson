@@ -81,6 +81,14 @@ mkdir -p .repo/local_manifests
 rm -f .repo/local_manifest.xml
 cp $WORKSPACE/hudson/$BRANCH/roomservice.xml $WORKSPACE/$BRANCH/.repo/local_manifests/roomservice.xml
 
+echo Core Manifest:
+cat .repo/manifest.xml
+
+echo Syncing...
+repo sync -d -c > /dev/null
+check_result "repo sync failed."
+echo Sync complete.
+
 $WORKSPACE/hudson/bzr-platform-api.sh pull
 
 else
