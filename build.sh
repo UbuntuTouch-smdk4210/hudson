@@ -117,7 +117,7 @@ cp $OUT/cm-10.1-$date-UNOFFICIAL-$DEVICE.zip /var/www/vhosts/gerrett84.de/roms/$
 
 cd /var/www/vhosts/gerrett84.de/roms/$DEVICE/ubuntu/$BRANCH/$BUILD_STAT/
 
-md5sum "saucy-preinstalled-armel-$DEVICE_date1.zip" > "saucy-preinstalled-armel-$DEVICE_$date1.zip.md5sum"
+md5sum "saucy-preinstalled-armel-$DEVICE_$date1.zip" > "saucy-preinstalled-armel-$DEVICE_$date1.zip.md5sum"
 
 echo "Remove builds older than 5 days"
 find /var/www/vhosts/gerrett84.de/roms/$DEVICE/ubuntu/$BRANCH/$BUILD_STAT/* -mtime +5 -exec rm {} \;
