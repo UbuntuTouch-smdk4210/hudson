@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <project name="UbuntuTouch-smdk4210/android_device_samsung_n7000" path="device/samsung/n7000" remote="github" revision="phablet-saucy" />
+  <project name="UbuntuTouch-smdk4210/android_device_samsung_i777" path="device/samsung/i777" remote="github" revision="phablet-saucy" />
+  <project name="UbuntuTouch-smdk4210/android_device_samsung_i9100" path="device/samsung/i9100" remote="github" revision="phablet-saucy" />
+  <project name="UbuntuTouch-smdk4210/android_device_samsung_galaxys2-common" path="device/samsung/galaxys2-common" remote="github" revision="phablet-saucy" />
+  <project name="UbuntuTouch-smdk4210/android_hardware_samsung" path="hardware/samsung" remote="github" revision="phablet-saucy" />
+  <project name="UbuntuTouch-smdk4210/android_kernel_samsung_smdk4412" path="kernel/samsung/smdk4412" remote="github" revision="phablet-saucy" />
+  <project name="UbuntuTouch-smdk4210/proprietary_vendor_samsung" path="vendor/samsung" remote="github" revision="phablet-saucy" />
+</manifest>
