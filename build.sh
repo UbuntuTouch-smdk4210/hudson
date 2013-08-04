@@ -73,18 +73,15 @@ then
 
 rm -rf .repo/manifests*
 rm -f .repo/local_manifests/roomservice.xml
-cd $WORKSPACE
+
+repo init -u git://phablet.ubuntu.com/CyanogenMod/android.git -b $BRANCH 
+check_result "repo init failed."
 
 mkdir -p .repo/local_manifests
 rm -f .repo/local_manifest.xml
-cp /home/jenkins/ubuntutouch/build/$BRANCH/roomservice.xml $WORKSPACE/$BRANCH/.repo/local_manifests/roomservice.xml
+cp $WORKSPACE/hudson/$BRANCH/roomservice.xml $WORKSPACE/$BRANCH/.repo/local_manifests/roomservice.xml
 
-phablet-dev-bootstrap -c $BRANCH
-check_result "repo init failed."
-
-/home/jenkins/ubuntutouch/bzr-platform-api.sh pull
-
-cd $BRANCH
+$WORKSPACE/hudson/bzr-platform-api.sh pull
 
 else
 echo "Start withouth syncing"
